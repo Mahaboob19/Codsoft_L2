@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #b3f485c6;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    gap: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    gap: 10px;
+}
+.logo ion-icon{
+    color: red;
+    font-size: 50px;
+}
+.options{
+    display: flex;
+    gap: 30px;
+}
+.options h2:hover{
+    cursor: pointer;
+    color: #f40909;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.buttons button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.buttons :hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #3ad60fe2;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    height:90vh;
+}
+.home-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 50%;
+
+}
+.home-left h1{
+    font-size: 3rem;
+}
+.home-left p {
+    font-size: 1.5rem;
+}
+.home-left button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    align-self: self-start;
+    background-color: #40ff06;
+}
+.home-left button:hover{
+    background-color: #fff;
+    color: black;
+}
+.home-right img{
+    height: 500px;
+    width: 600px;
+    border-radius: 20px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 80vh;
+    padding: 30px 0px;
+}
+.about h1{
+    text-align: center;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.about-left{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.about-left img{
+    height: 450px;
+    width: 600px;
+    border-radius: 20px;
+}
+.about-right h3{
+    font-size: 25px;
+}
+.about-right p, ul{
+    font-size: 20px;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0px;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+.imgcon{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    cursor: pointer;
+
+}
+.imgcon img{
+    height: 250px;
+    width: 250px;
+}
+.contact {
+    padding: 30px 0px;
+    text-align: center;
+}
+.contact h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.contact-left, .contact-right {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.contact-left h3, .contact-right h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+.contact-left p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact-info .info-item ion-icon {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-right: 10px;
+}
+.contact-info .info-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+.social-links {
+    margin-top: 30px;
+}
+.social-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+.social-links a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+.social-links ion-icon {
+    font-size: 35px;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+#face ion-icon:hover{
+    color: #3330e5;
+}
+#twitter ion-icon:hover{
+    color: #6f6ded;
+}
+#insta ion-icon:hover{
+    color: #e54d6e;
+}
+#lindin ion-icon:hover{
+    color: #1614b7;
+}
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-right .form-group input,
+.contact-right .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ecbfbf;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+.contact-right .form-group textarea {
+    resize: vertical;
+}
+.contact-right button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.contact-right button:hover{
+    cursor: pointer;
+    background-color: #3fbe43;
+    color: #fff;
+}
